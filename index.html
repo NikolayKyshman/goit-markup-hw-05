@@ -23,7 +23,7 @@
           <nav class="header-nav">
             <a class="header-logo link" href="index.html">Web<span class="logo-studio-b">Studio</span></a>
              <ul class="header-list list">
-                <li class="header-item"><a class="link header-link studio" href="">Студия</a></li>
+                <li class="header-item"><a class="link header-link current" href="">Студия</a></li>
                 <li class="header-item"><a class="link header-link" href="portfolio.html">Портфолио</a></li>
                 <li class="header-item"><a class="link header-link" href="">Контакты</a></li>
               </ul>
@@ -54,7 +54,7 @@
             <section class="hero">
                 <div class="container">
                     <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                    <button type="button" class="hero-btn">Заказать услугу</button>
+                    <button type="button" class="hero-btn" data-modal-open>Заказать услугу</button>
                 </div>
             </section>
         
@@ -120,13 +120,22 @@
                 <h2 class="basic-title">Чем мы занимаемся</h2>
                 <ul class="list basic-list">
                 <li class="basic-item">
-                    <img src="./images/image.clas1.jpg" alt="ноутбук" width="370" height="294" />
+                    <div class="basic-item-wrap">
+                        <img src="./images/image.clas1.jpg" alt="ноутбук" width="370" height="294" />
+                            <b class="basic-text">Десктопные приложения</b>
+                    </div>
                 </li>
                 <li class="basic-item">
-                    <img src="./images/image.clas2.jpg" alt="смартфон" width="370" height="294" />
+                    <div class="basic-item-wrap">
+                        <img src="./images/image.clas2.jpg" alt="смартфон" width="370" height="294" />
+                            <b class="basic-text">Мобильные приложения</b>
+                    </div>
                 </li>
                 <li class="basic-item">
-                    <img src="./images/image.clas3.jpg" alt="планшет" width="370" height="294" />
+                    <div class="basic-item-wrap">
+                        <img src="./images/image.clas3.jpg" alt="планшет" width="370" height="294" />
+                            <b class="basic-text">Дизайнерские решения</b>
+                    </div>
                 </li>
                     </ul>
             </div>
@@ -395,7 +404,19 @@
                     
                     </div>
                 </div>
-                
-           </footer>
+            </footer>
+
+            <!-- modalwindow -->
+        
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button type="button" class="modal-close" data-modal-close>
+                    <svg class="modal-close-icon" widh="18" height="18">
+                        <use href="./images/icons.svg.svg#icon-Vector-1"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <script src="./js/modal.js"></script>
     </body>
 </html>
